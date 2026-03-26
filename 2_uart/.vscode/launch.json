@@ -18,7 +18,7 @@
                 "gdbPath": "/opt/homebrew/bin/arm-none-eabi-gdb" // Can be replaced with lldb
             },
               "linux": {
-                "armToolchainPath": "/opt/arm-none-eabi-13.2/bin" // Specific for lab PCs
+                "armToolchainPath": "/usr/local/bin" // Specific for lab PCs
 
               },
             "gdbTarget": "localhost:3333"
