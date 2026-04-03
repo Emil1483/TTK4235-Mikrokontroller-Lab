@@ -7,20 +7,21 @@
             "request": "launch",
             "servertype": "jlink",
             "cwd": "${workspaceRoot}",
-            "executable": "build/main.elf",  // Adjust the path to your compiled .elf file
-            "device": "nRF52832_xxAA",  // Specify your device
-            "svdFile": ".build_system/nrf52.svd",  // Path to the SVD file
-            "preLaunchTask": "build",  // Specify any task to run before launching the debugger, e.g., build
+            "executable": "build/main.elf", // Adjust the path to your compiled .elf file
+            "device": "nRF52832_xxAA", // Specify your device
+            "svdFile": ".build_system/nrf52.svd", // Path to the SVD file
+            "preLaunchTask": "build", // Specify any task to run before launching the debugger, e.g., build
             "runToEntryPoint": "main",
             "interface": "swd",
             "osx": {
                 "armToolchainPath": "/opt/homebrew/bin/",
                 "gdbPath": "/opt/homebrew/bin/arm-none-eabi-gdb" // Can be replaced with lldb
             },
-              "linux": {
-                "armToolchainPath": "/opt/arm-none-eabi-13.2/bin" // Specific for lab PCs
-
-              },
+            "linux": {
+                "armToolchainPath": "/opt/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin" // Specific for lab PCs
+                // "armToolchainPath": "/opt/arm-none-eabi-13.2/bin" // Specific for lab PCs
+                // "armToolchainPath": "/usr/local/bin" // Specific for lab PCs
+            },
             "gdbTarget": "localhost:3333"
         }
     ]

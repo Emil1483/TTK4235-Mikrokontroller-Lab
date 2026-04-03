@@ -8,3 +8,9 @@ void configure_led_matrix() {
         GPIO->OUTSET = (1 << i);
     }
 }
+
+void configure_button() {
+    // Configure pin 13 to be input, connected to input buffer, pull up,
+    // standard '0' and '1', and disabled sense
+    GPIO->PIN_CNF[13] = 3 << 2;
+}
