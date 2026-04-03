@@ -17,4 +17,6 @@ typedef struct {
 	volatile uint32_t PIN_CNF[32];
 } NRF_GPIO_REG;
 
+void configure_led_matrix();
+
 #endif
